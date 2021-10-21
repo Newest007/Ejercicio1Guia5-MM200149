@@ -31,10 +31,15 @@ namespace Ejercicio1___Guía5_MM200149
                 validado = false;
                 errorProvider1.SetError(txtapellido, "Ingresar Apellido");
             }
-
             return validado;
-
         }
+
+        private void BorrarMensajesError()
+        {
+            errorProvider1.SetError(txtnombre, "");
+            errorProvider1.SetError(txtapellido, "");
+        }
+
 
         private void button1_Click(object sender, EventArgs e)
         {

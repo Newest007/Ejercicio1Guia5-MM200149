@@ -39,7 +39,7 @@ namespace Ejercicio1___Guía5_MM200149
             this.label4 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.txtedad = new System.Windows.Forms.TextBox();
-            this.button1 = new System.Windows.Forms.Button();
+            this.btnguardar = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
             this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel1.SuspendLayout();
@@ -127,17 +127,17 @@ namespace Ejercicio1___Guía5_MM200149
             this.txtedad.Size = new System.Drawing.Size(80, 34);
             this.txtedad.TabIndex = 8;
             // 
-            // button1
+            // btnguardar
             // 
-            this.button1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
-            this.button1.ForeColor = System.Drawing.SystemColors.Control;
-            this.button1.Location = new System.Drawing.Point(454, 292);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(151, 57);
-            this.button1.TabIndex = 9;
-            this.button1.Text = "Guardar";
-            this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.btnguardar.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
+            this.btnguardar.ForeColor = System.Drawing.SystemColors.Control;
+            this.btnguardar.Location = new System.Drawing.Point(454, 292);
+            this.btnguardar.Name = "btnguardar";
+            this.btnguardar.Size = new System.Drawing.Size(151, 57);
+            this.btnguardar.TabIndex = 9;
+            this.btnguardar.Text = "Guardar";
+            this.btnguardar.UseVisualStyleBackColor = false;
+            this.btnguardar.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel1
             // 
@@ -160,7 +160,7 @@ namespace Ejercicio1___Guía5_MM200149
             this.BackColor = System.Drawing.SystemColors.Control;
             this.ClientSize = new System.Drawing.Size(658, 386);
             this.Controls.Add(this.panel1);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.btnguardar);
             this.Controls.Add(this.txtedad);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.label4);
@@ -192,7 +192,7 @@ namespace Ejercicio1___Guía5_MM200149
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.TextBox txtedad;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button btnguardar;
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.ErrorProvider errorProvider1;
     }
