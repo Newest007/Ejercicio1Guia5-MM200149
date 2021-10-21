@@ -74,6 +74,7 @@ namespace Ejercicio1___Guía5_MM200149
             this.txtnombre.Name = "txtnombre";
             this.txtnombre.Size = new System.Drawing.Size(217, 34);
             this.txtnombre.TabIndex = 2;
+            this.txtnombre.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtnombre_KeyPress);
             // 
             // txtapellido
             // 
@@ -81,6 +82,7 @@ namespace Ejercicio1___Guía5_MM200149
             this.txtapellido.Name = "txtapellido";
             this.txtapellido.Size = new System.Drawing.Size(217, 34);
             this.txtapellido.TabIndex = 3;
+            this.txtapellido.KeyPress += new System.Windows.Forms.KeyPressEventHandler(this.txtapellido_KeyPress);
             // 
             // label3
             // 

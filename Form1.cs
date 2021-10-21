@@ -43,6 +43,47 @@ namespace Ejercicio1___Guía5_MM200149
 
         private void button1_Click(object sender, EventArgs e)
         {
+            BorrarMensajesError();
+            if(validarCampos())
+            {
+                MessageBox.Show("Los datos se han ingresado correctamente");
+            }
+
+            DateTime fechanacimiento = dateTimePicker1.Value;
+            int años = System.DateTime.Now.Year - fechanacimiento.Year;
+
+            if (System.DateTime.Now.Subtract(fechanacimiento.AddYears(años)).TotalDays < 0)
+                txtedad.Text = Convert.ToString(años - 1);
+
+            else
+                txtedad.Text = Convert.ToString(años);
+
+
+        }
+
+        private void txtnombre_KeyPress(object sender, KeyPressEventArgs e)
+        {
+            if(char.IsLetter(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else if(char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else if(char.IsSeparator(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+                errorProvider1.SetError(txtnombre, "Debe de ingresar su nombre, no un Nick");
+            }
+        }
+
+        private void txtapellido_KeyPress(object sender, KeyPressEventArgs e)
+        {
 
         }
     }
