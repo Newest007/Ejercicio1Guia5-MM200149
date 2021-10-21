@@ -84,7 +84,23 @@ namespace Ejercicio1___Guía5_MM200149
 
         private void txtapellido_KeyPress(object sender, KeyPressEventArgs e)
         {
-
+            if (char.IsLetter(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else if (char.IsControl(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else if (char.IsSeparator(e.KeyChar))
+            {
+                e.Handled = false;
+            }
+            else
+            {
+                e.Handled = true;
+                errorProvider1.SetError(txtnombre, "Debe de ingresar su apellido, no un Nick");
+            }
         }
     }
 }
