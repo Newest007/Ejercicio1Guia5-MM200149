@@ -31,6 +31,11 @@ namespace Ejercicio1___Guía5_MM200149
                 validado = false;
                 errorProvider1.SetError(txtapellido, "Ingresar Apellido");
             }
+
+
+            
+
+
             return validado;
         }
 
@@ -46,7 +51,15 @@ namespace Ejercicio1___Guía5_MM200149
             BorrarMensajesError();
             if(validarCampos())
             {
-                MessageBox.Show("Los datos se han ingresado correctamente");
+                if (dateTimePicker1.Value.Year > System.DateTime.Now.Year)
+                {
+                    MessageBox.Show("Prueba con un año anterior al presente", "Al parecer vienes del futuro :O");
+                    //Application.Restart();
+                }
+                else
+                {
+                    MessageBox.Show("Sus datos se han ingresado correctamente", "", MessageBoxButtons.OK);
+                }
             }
 
             DateTime fechanacimiento = dateTimePicker1.Value;
@@ -54,10 +67,14 @@ namespace Ejercicio1___Guía5_MM200149
 
             if (System.DateTime.Now.Subtract(fechanacimiento.AddYears(años)).TotalDays < 0)
                 txtedad.Text = Convert.ToString(años - 1);
-
             else
                 txtedad.Text = Convert.ToString(años);
 
+            if (años < 0)
+            {
+                txtedad.Clear();
+
+            }
 
         }
 

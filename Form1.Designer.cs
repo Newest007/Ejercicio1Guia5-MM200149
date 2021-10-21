@@ -96,6 +96,8 @@ namespace Ejercicio1___Guía5_MM200149
             // 
             // dateTimePicker1
             // 
+            this.dateTimePicker1.CalendarForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(150)))), ((int)(((byte)(136)))));
+            this.dateTimePicker1.CalendarTrailingForeColor = System.Drawing.SystemColors.AppWorkspace;
             this.dateTimePicker1.Location = new System.Drawing.Point(245, 235);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(314, 34);
@@ -174,6 +176,7 @@ namespace Ejercicio1___Guía5_MM200149
             this.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Ejercicio 1 Guía 4 MM200149";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
