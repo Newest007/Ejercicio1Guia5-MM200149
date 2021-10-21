@@ -99,7 +99,7 @@ namespace Ejercicio1___Guía5_MM200149
             else
             {
                 e.Handled = true;
-                errorProvider1.SetError(txtnombre, "Debe de ingresar su apellido, no un Nick");
+                errorProvider1.SetError(txtapellido, "Debe de ingresar su apellido, no un Nick");
             }
         }
     }
