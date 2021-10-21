@@ -16,5 +16,29 @@ namespace Ejercicio1___Guía5_MM200149
         {
             InitializeComponent();
         }
+
+        private bool validarCampos()
+        {
+            bool validado = true;
+            if(txtnombre.Text=="")
+            {
+                validado = false;
+                errorProvider1.SetError(txtnombre, "Ingresar Nombre");
+            }
+
+            if(txtapellido.Text == "")
+            {
+                validado = false;
+                errorProvider1.SetError(txtapellido, "Ingresar Apellido");
+            }
+
+            return validado;
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

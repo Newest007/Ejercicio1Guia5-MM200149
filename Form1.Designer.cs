@@ -29,6 +29,7 @@ namespace Ejercicio1___Guía5_MM200149
         /// </summary>
         private void InitializeComponent()
         {
+            this.components = new System.ComponentModel.Container();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.txtnombre = new System.Windows.Forms.TextBox();
@@ -40,7 +41,9 @@ namespace Ejercicio1___Guía5_MM200149
             this.txtedad = new System.Windows.Forms.TextBox();
             this.button1 = new System.Windows.Forms.Button();
             this.panel1 = new System.Windows.Forms.Panel();
+            this.errorProvider1 = new System.Windows.Forms.ErrorProvider(this.components);
             this.panel1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).BeginInit();
             this.SuspendLayout();
             // 
             // label1
@@ -134,6 +137,7 @@ namespace Ejercicio1___Guía5_MM200149
             this.button1.TabIndex = 9;
             this.button1.Text = "Guardar";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // panel1
             // 
@@ -144,6 +148,10 @@ namespace Ejercicio1___Guía5_MM200149
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(658, 81);
             this.panel1.TabIndex = 10;
+            // 
+            // errorProvider1
+            // 
+            this.errorProvider1.ContainerControl = this;
             // 
             // Form1
             // 
@@ -167,6 +175,7 @@ namespace Ejercicio1___Guía5_MM200149
             this.Text = "Ejercicio 1 Guía 4 MM200149";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -185,6 +194,7 @@ namespace Ejercicio1___Guía5_MM200149
         private System.Windows.Forms.TextBox txtedad;
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.ErrorProvider errorProvider1;
     }
 }
 
