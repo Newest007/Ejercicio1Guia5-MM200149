@@ -58,7 +58,7 @@ namespace Ejercicio1___Guía5_MM200149
                 }
                 else
                 {
-                    MessageBox.Show("Sus datos se han ingresado correctamente", "", MessageBoxButtons.OK);
+                    MessageBox.Show("Sus datos se han ingresado correctamente", "", MessageBoxButtons.OK,MessageBoxIcon.Information);
                 }
             }
 
