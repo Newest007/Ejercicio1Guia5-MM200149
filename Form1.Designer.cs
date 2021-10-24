@@ -177,7 +177,7 @@ namespace Ejercicio1___Guía5_MM200149
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Ejercicio 1 Guía 4 MM200149";
+            this.Text = "Ejercicio 1 Guía 5 MM200149";
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.errorProvider1)).EndInit();
